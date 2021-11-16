@@ -12,12 +12,14 @@
                        <thead>
                            <th> ID</th>
                            <th> Title</th>
+                           <th> Description </th>
                        </thead>
                        <tbody>
                            @foreach ($trainings as $training)
                                 <tr>
-                                    <td>{{ $training->id}}</td>
-                                    <td> {{ $training->title}}</td>
+                                    <td>{{ $training->id }}</td>
+                                    <td> {{ $training->title }}</td>
+                                    <td> {{ $training->description }} </td>
                                 </tr>
                             @endforeach
                        </tbody>
